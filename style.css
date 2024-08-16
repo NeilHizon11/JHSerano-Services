@@ -33,7 +33,7 @@ header{
 }
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;;
     justify-items: center;
     align-items: center;
     column-gap: 15px;

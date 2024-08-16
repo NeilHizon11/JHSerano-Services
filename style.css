@@ -33,7 +33,7 @@ header{
 }
 .header{
     display: flex;
-    justify-content: space-evenly;;
+    justify-content: space-evenly;
     justify-items: center;
     align-items: center;
     column-gap: 15px;
@@ -176,6 +176,41 @@ header{
 
 /* comprehensinve marketing plan section */
 
+.secondSection2{
+    position: relative;
+    background-color: aliceblue;
+    z-index: 10;
+}
+.ssContent{
+    /* border: 1px solid red; */
+    height:max-content;padding: 20px;
+    flex-wrap: wrap;
+}
+.ssContentRow, .ssContentRow2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+.ssBoxes{
+    /* border: blue solid 1px; */
+    width: 450px;
+    text-align: center;
+    padding: 30px 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 8px #2c2c2c;
+}
+.ssBoxes h2{
+    padding-bottom: 10px;
+}
+.ssBoxes img{
+    width: 100px;
+}
+.secSectionDiv{
+    z-index: 10;
+}
+/* 
 .secondSection{
     position: relative;
     padding-top: 100px;
@@ -193,11 +228,11 @@ header{
     left: 150px;
 }
 .tcTitle{
-    /* border: 1px solid purple; */
+    /* border: 1px solid purple; 
     background-color: white;
 }
 .twoColumn1 .gridFour {
-    /* border: 1px solid blue; */
+    /* border: 1px solid blue; 
     background-color: white;
     height: 91%;
 }
@@ -209,7 +244,7 @@ header{
     background-repeat: no-repeat;
     background-size: auto;
 
-}
+} */
 
 
 

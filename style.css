@@ -61,7 +61,7 @@ header{
  .heroSect{
     height: 70vh;
     width: auto;
-    background-image: url(assets/photo-1565182999561-18d7dc61c393.jpeg);
+    background-image: url(./assets/photo-1565182999561-18d7dc61c393.jpeg);
     background-position: center;
     display: flex;
     flex-wrap: nowrap;

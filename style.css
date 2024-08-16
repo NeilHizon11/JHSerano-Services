@@ -204,7 +204,7 @@ header{
 
 .twoColumn2{
     width: 40%;
-    background-image: url(/assets/page-3.webp);
+    background-image: url(assets/page-3.webp);
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: auto;
@@ -335,19 +335,19 @@ header{
 }
 
 .img1{
-    background-image: url(/assets/image-025.webp);
+    background-image: url(assets/image-025.webp);
 }
 
 .img2 {
-    background-image: url(/assets/image-023.webp);
+    background-image: url(assets/image-023.webp);
 }
 
 .img3{
-    background-image: url(/assets/image-022.webp);
+    background-image: url(assets/image-022.webp);
 }
 
 .img4{
-    background-image: url(/assets/image-024.webp);
+    background-image: url(assets/image-024.webp);
 }
 
 .sliderSection .container{
@@ -412,7 +412,7 @@ header{
 
 .tspSection, .portfolioSecttion{
     position: relative;
-    background-image: url(/assets/gruy2.jpg);
+    background-image: url(assets/gruy2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -453,7 +453,7 @@ header{
 /* 6th section */
 
 .imageDivider{
-    background-image: url(/assets/image-027.webp);
+    background-image: url(assets/image-027.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

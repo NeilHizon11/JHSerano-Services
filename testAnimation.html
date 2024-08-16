@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .scroll-section {
+            display: flex;
+            justify-content: space-between;
+            height: 2000px; /* Example height to allow scrolling */
+        }
+        .scroll-section img{
+            width: 550px;
+        }
+
+        .left-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            position: fixed;  /* Fixes the position relative to the viewport */
+            /* Initial position in the middle of the screen */
+            transform: translateY(-50%);
+            transition: transform 1s ease-in-out;  /* Smooth animation for transform */
+        }
+        .right-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            position: fixed;  /* Fixes the position relative to the viewport */
+            
+            transform: translateY(50%);
+            transition: transform 1s ease-in-out;  /* Smooth animation for transform */
+        
+        }
+
+        .left-container {
+            left:5%;  /* Position on the left */
+        }
+
+        .right-container {
+            right: 10%;  /* Position on the right */
+        }
+    </style>
+    <section class="scroll-section">
+        <div class="left-container">
+            <img src="/assets/image-025.webp" alt="Image 1">
+            <img src="/assets/image-023.webp" alt="Image 2">
+        </div>
+        <div class="right-container">
+            <img src="/assets/image-022.webp" alt="Image 3">
+            <img src="/assets/image-024.webp" alt="Image 4">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+
+            // Calculate the new positions for left and right containers
+            const leftContainer = document.querySelector('.left-container');
+            const rightContainer = document.querySelector('.right-container');
+
+            const leftMove = (scrollPosition - windowHeight) * 0.1;  // Change 0.1 to adjust speed/delay
+            const rightMove = (scrollPosition - windowHeight) * -0.1;
+
+            // Apply the transformations with smooth animation
+            leftContainer.style.transform = `translateY(${leftMove}px)`;
+            rightContainer.style.transform = `translateY(${rightMove}px)`;
+        });
+
+    </script>
+</body>
+</html>
